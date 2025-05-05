@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: aquamarine;
+        }
+
+        pre{
+            font-size:larger;
+            font-family:italic;
+            color:blue;
+        }
+
+        #id1{
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .cl1{
+            background-position: center;
+        }
+
+        input[type="email"]{
+            font-family:italic;
+            color:brown;
+        }
+
+        #div1 p{
+            color:pink;
+        }
+        #div2 p{
+            color:chartreuse;
+        }
+
+        #div3 > p{
+            font-weight:bold;
+            font-family:'Times New Roman', Times, serif;
+        }
+
+        h2+p{
+            color:chocolate;
+            font-weight:400;
+        }
+
+        h2~p{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <h2> Welcome to the class</h2>
+    <p id="id1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nihil?</p>
+    <h4 class="cl1">here is the class notes</h4>
+    <h5 class="cl1">copy it</h5>
+    <pre>hello ................
+                world..........!
+    </pre>
+    <form>
+        <label for="name">enter the name:</label>
+        <input type="text">
+        <label for="email"></label>
+        <input type="email">
+
+    </form>
+
+    <div id="div1">
+        <h3>this is header of div1</h3>
+        <p>this is paragraph1 of div1</p>
+        <p>this is paragraph2 of div1</p>
+    </div>
+
+    <div id="div2">
+        <h3>this is header of div2</h3>
+        <p>this is paragraph1 of div2</p>
+        <p>this is paragraph2 of div1</p>
+    </div>
+
+    <div id="div3">
+        <h3>this is header of div3</h3>
+        <p>this is paragraph1 of div3</p>
+    </div>
+    <p>this is outside the div tag that is not the child tag of the div tag so the styling is not applied to this p tag..</p>
+
+    <h2>adjacent siblic selector:</h2>
+    <p>stylig is done to its adjacent sibling</p>
+
+
+    <h2>General siblic selector:</h2>
+    <p>para1</p>
+    <p>para2</p>
+    <p>para3</p>
+    <p>para4</p>
+    <h4>------</h4>
+    <p>para5</p>
+</body>
+</html>
